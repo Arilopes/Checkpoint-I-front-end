@@ -5,6 +5,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Petemoss&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petemoss&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
 
 body {
 	background-image: url("https://www.minasgerais.com.br/imagens/atracoes/1560450887Y5x5sfyZIe.jpg");
@@ -23,13 +24,27 @@ header{
     padding: 20px;
     text-align: center;
     background-color:blue;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
+.container {
+  margin-top: 150px;
+}
 
 h1 {
     font-family: 'Satisfy', cursive , sans-serif;
- }
- 
+   } 
+
+    h2 {
+      text-align: center;
+      font-family: cursive;
+      color: darksalmon;
+    
+    }
+
+
  .texto{
     margin-top: 40px;
     padding: 10px 50px 50px;
@@ -70,14 +85,7 @@ h1 {
       background-color: rgba(3, 3, 3, 0.521);
   }
 
-  .redes-sociais {
-    margin-top: 30px;
-    text-align: center;
-    background: rgba(3, 3, 3, 0.521);
-    padding: 20px;
-    width: 80%;
-    margin-left: 100px;
-}
+  
 
 
   #rodape {
@@ -96,3 +104,141 @@ h1 {
 .list {
     list-style: none;
 }
+
+ /* formulario */
+ 
+
+
+.formulario {
+  margin: 0px 200px 0px 200px;
+  background-color: rgba(23, 45, 241, 0.7);
+  border-radius: 20px;
+}
+
+fieldset {
+  margin: 30px;
+  border: 4px violet solid;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+legend {
+  color: rgb(255, 239, 10);
+  font-size: 20px;
+  padding: 10px;
+}
+
+div {
+  margin: 10px;
+}
+
+button {
+  background-color: rgb(221, 62, 200);
+  padding: 10px;
+  margin: 0px 20px 30px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border: 0;
+  border-radius: 10px;
+  width: 200px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+ 
+}
+ 
+button:hover{
+  background-color: blueviolet;
+
+  }
+  
+
+.buttons-div {
+  text-align: center;
+
+ 
+}
+
+
+
+input {
+  width: 80%;
+  height: 35px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  display: flexbox;
+
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px rgb(86, 47, 228) solid;
+  background-color: rgba(177, 206, 245, 0.836);
+  width: 85%;
+}
+
+
+
+#idade, #data {
+  width: 25%;
+  
+}
+
+  #maioridade {
+  width: 30px;
+  font-size: 16px;
+  height: 20px;
+  margin: 5px;
+  
+  
+    
+ }
+
+ select  {
+  width: 60%;
+  height: 35px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 16px;
+
+ }
+
+ #interesse {
+  width: 20px;
+  font-size: 16px;
+  height: 20px;
+  margin: 20px;
+  padding: 30px;
+ }
+
+#contato  {
+ position:fixed; 
+ top:12px; 
+ right:25px; 
+ width:250px;
+ background-color: rgb(241, 14, 14);
+  animation-name: contato;
+  animation-iteration-count:infinite;
+  animation-duration: 4s;
+} 
+
+#voltar  {
+  position:fixed; 
+  bottom:12px; 
+  right:25px; 
+  width:250px;
+  background-color: rgb(241, 14, 14);
+   animation-name: contato;
+   animation-iteration-count:infinite;
+   animation-duration: 4s;
+ } 
+
+@keyframes contato {
+  from {background-color: rgb(192, 9, 9);}
+  to {background-color: rgb(8, 192, 69);}
+
+}
+
+
+
